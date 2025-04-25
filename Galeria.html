@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galería</title>
+  <link rel="stylesheet" href="galeria.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Galería de Álbumes</h1>
+    <p>Haz clic en un álbum para ver más imágenes</p>
+  </header>
+
+  <section id="albums">
+    <div class="album" onclick="openAlbum('album1')">
+      <img src="Imagen/mi-foto.jpg" alt="Álbum 1">
+      <p>Álbum 1</p>
+    </div>
+    <div class="album" onclick="openAlbum('album2')">
+      <img src="Imagen/zen.jpg" alt="Álbum 2">
+      <p>Álbum 2</p>
+    </div>
+    <div class="album" onclick="openAlbum('album3')">
+      <img src="Imagen/images1.jpg" alt="Álbum 3">
+      <p>Álbum 3</p>
+    </div>
+    <div class="album" onclick="openAlbum('album4')">
+      <img src="Imagen/zend.jpg" alt="Álbum 4">
+      <p>Álbum 4</p>
+    </div>
+    <div class="album" onclick="openAlbum('album5')">
+      <img src="Imagen/Zendaya.jpg" alt="Álbum 5">
+      <p>Álbum 5</p>
+    </div>
+    <div class="album" onclick="openAlbum('album6')">
+      <img src="Imagen/zendd.jpg" alt="Álbum 6">
+      <p>Álbum 6</p>
+    </div>
+  </section>
+
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">×</span>
+    <div id="albumContent" class="modal-content">
+    </div>
+  </div>
+
+  <script src="galeria.js"></script>
+</body>
+</html>
